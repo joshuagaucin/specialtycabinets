@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Itim', cursive;
+    color: rgb(36, 36, 36);    
+}
+body {
+   
+    background-image: url(../img/wood-texture-1193381-1918x1415.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.who-we-are {
+   
+    display: flex;
+    
+    justify-content: center;
+    
+
+}
+.mission{
+    display:flex;
+    
+       flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    
+    
+}
+.card-container{
+    display: flex;
+    justify-content: space-around;
+    
+    flex-direction: row;
+    
+
+}
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: x-large;
+    background-color: rgb(255, 255, 255, 1);
+    width: 200px;
+    height:300px;
+    padding: 10px;
+    color:white ;
+
+
+}
+#past-jobs{
+    background-image: url(../img/kitchen-1474246.jpg);
+    background-size: cover;
+    opacity: .5;
+}
+#past-jobs:hover{
+    opacity: 1;
+}
+#services {
+    background-image: url(../img/jana-sabeth-oQQEXoG8Oqc-unsplash.jpg);
+    background-size: cover;
+    
+    opacity: .5;
+}
+#services:hover {
+    opacity: 1;
+}
+#career{
+    background-image: url(../img/estee-janssens-zEqkUMiMxMI-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+    opacity: .5;
+    
+}
+#career:hover{
+    opacity: 1;
+}

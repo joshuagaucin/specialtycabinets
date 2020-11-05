@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/ssh/service-form.css">
+    <link rel="stylesheet" href="/assets/ssh/navbar.css">
+    <link rel="stylesheet" href="/assets/ssh/home.css">
+</head>
+<body>
+    
+</body>
+</html>
+<div class='navbar'>
+    <img src="../img/logo_trans50.jpg" alt="sci-logo">
+    <div class='dropdown'>
+        <button class='dropbtn'>Menu
+        </button>
+        <div class="dropdown-content">
+            <a href="/assets/pages/past-jobs.html">Gallery</a>
+            <a href="/assets/pages/careers.html">Careers</a>
+            <a href="/assets/pages/contact.html">Contact</a>
+            <a href="/assets/pages/help.html">Help</a>
+            <a href="">logout</a>
+        </div>
+    </div>
+    <a href='/assets/pages/services.html'>Services</a>
+    <a href='../../index.html'>Home</a>
+
+
+</div>
+<div class="form">
+
+    <input name="firstname" onclick="this.classList.remove('failed');" type="text" placeholder="First Name*" value=""
+        id="ispbxii_2">
+    <input name="lastname" onclick="this.classList.remove('failed');" type="text" placeholder="Last Name*" value=""
+        id="ispbxii_3">
+    <input name="phone" onclick="this.classList.remove('failed');" type="text" placeholder="Phone Number" value=""
+        id="ispbxii_4">
+    <input name="email" onclick="this.classList.remove('failed');" type="text" placeholder="Email Address*" value=""
+        id="ispbxii_5">
+    <input name="zipcode" onclick="this.classList.remove('failed');" type="text" placeholder="Zip Code*" value=""
+        id="ispbxii_6">
+    <input name="city" onclick="this.classList.remove('failed');" type="text" placeholder="City*" value=""
+        id="ispbxii_7">
+    <select name="state" onclick="this.classList.remove('failed');">
+        <option value="blank" select="">Select State*</option>
+        <option value="0">Alabama</option>
+        <option value="1">Alaska</option>
+        <option value="2">Arizona</option>
+        <option value="3">Arkansas</option>
+        <option value="53">Armed Forces Americas</option>
+        <option value="52">Armed Forces Europe</option>
+        <option value="54">Armed Forces Pacific</option>
+        <option value="4">California</option>
+        <option value="5">Colorado</option>
+        <option value="6">Connecticut</option>
+        <option value="7">Delaware</option>
+        <option value="8">District of Columbia</option>
+        <option value="9">Florida</option>
+        <option value="10">Georgia</option>
+        <option value="11">Hawaii</option>
+        <option value="12">Idaho</option>
+        <option value="13">Illinois</option>
+        <option value="14">Indiana</option>
+        <option value="15">Iowa</option>
+        <option value="16">Kansas</option>
+        <option value="17">Kentucky</option>
+        <option value="18">Louisiana</option>
+        <option value="19">Maine</option>
+        <option value="20">Maryland</option>
+        <option value="21">Massachusetts</option>
+        <option value="22">Michigan</option>
+        <option value="23">Minnesota</option>
+        <option value="24">Mississippi</option>
+        <option value="25">Missouri</option>
+        <option value="26">Montana</option>
+        <option value="27">Nebraska</option>
+        <option value="28">Nevada</option>
+        <option value="29">New Hampshire</option>
+        <option value="30">New Jersey</option>
+        <option value="31">New Mexico</option>
+        <option value="32">New York</option>
+        <option value="33">North Carolina</option>
+        <option value="34">North Dakota</option>
+        <option value="35">Ohio</option>
+        <option value="36">Oklahoma</option>
+        <option value="37">Oregon</option>
+        <option value="38">Pennsylvania</option>
+        <option value="39">Puerto Rico</option>
+        <option value="40">Rhode Island</option>
+        <option value="41">South Carolina</option>
+        <option value="42">South Dakota</option>
+        <option value="43">Tennessee</option>
+        <option value="44">Texas</option>
+        <option value="45">Utah</option>
+        <option value="46">Vermont</option>
+        <option value="47">Virginia</option>
+        <option value="48">Washington</option>
+        <option value="49">West Virginia</option>
+        <option value="50">Wisconsin</option>
+        <option value="51">Wyoming</option>
+    </select>
+    <div class="companySec">
+        <input name="companyname" class="companyInput" placeholder="Company Name" type="text" value="" id="ispbxii_8">
+        <input name="leadsource" class="ProOptionValue" type="hidden" value="">
+        <div class="proCheck checkboxWrapper" style="margin-right: 10px;">
+            <input type="checkbox" class="ProOption">
+            <label for="ProOption">I am a <b><i><span style="color:#60285F;">PRO</span></i></b></label>
+        </div>
+    </div>
+<div class="checkboxOptionsContainer">   
+    <div class="checkboxOptions">
+        <h4>What kind of project is this?</h4>
+        <div class="checkboxList">
+            <input name="custentity_project" class="projectValue" type="hidden" value="">
+            <div class="checkboxWrapper">
+                <input type="checkbox" class="kitchenOpt" value="Kitchen">
+                <label for="kitchenOpt">Kitchen</label>
+            </div>
+            <div class="checkboxWrapper">
+                <input type="checkbox" class="bathOpt" value="Bath">
+                <label for="bathOpt">Bath</label>
+            </div>
+            <div class="checkboxWrapper">
+                <input type="checkbox" class="closetOpt" value="Closet">
+                <label for="closetOpt">Closets</label>
+            </div>
+            <div class="checkboxWrapper">
+                <input type="checkbox" class="otherOpt" value="Other">
+                <label for="otherOpt">Other</label>
+            </div>
+        </div>
+    </div>
+    <div class="checkboxOptions">
+        <h4>What products are you interested in?</h4>
+        <div class="checkboxList">
+            <input name="custentity_interested" class="interestedValue" type="hidden" value="">
+            <div class="checkboxWrapper">
+                <input onclick="toggleMoreInfo(this)" type="checkbox" class="cabinetsOpt" value="Cabinets">
+                <label for="cabinetsOpt">Cabinets</label>
+            </div>
+            <div class="checkboxWrapper">
+                <input onclick="toggleMoreInfo(this)" type="checkbox" class="counterOpt" value="Countertops">
+                <label for="counterOpt">Countertops</label>
+            </div>
+            <div class="checkboxWrapper">
+                <input onclick="toggleMoreInfo(this)" type="checkbox" class="floorOpt" value="Flooring">
+                <label for="floorOpt">Flooring</label>
+            </div>
+        </div>
+
+    </div>
+    <div class="checkboxOptions">
+        <h4>When are you planning your project?</h4>
+        <div class="checkboxList">
+            <div class="checkboxWrapper">
+                <input type="radio" class="immOpt" name="custentity_timeline" value="Immediately">
+                <label for="immOpt">Immediately</label>
+            </div>
+            <div class="checkboxWrapper">
+                <input type="radio" class="36monOpt" name="custentity_timeline" value="3-6 Months">
+                <label for="36monOpt">3-6 Months</label>
+            </div>
+            <div class="checkboxWrapper">
+                <input type="radio" class="6monOpt" name="custentity_timeline" value="6+ Months">
+                <label for="6monOpt">6+ Months</label>
+            </div>
+        </div>
+    </div>
+    <div class="checkboxOptions">
+        <h4>Do you need an in-home measurement?</h4>
+        <div class="ynRadios">
+            <div class="checkboxWrapper">
+                <input type="radio" class="yesMeaOpt" name="custentity_measure" value="Yes">
+                <label for="yesMeaOpt">Yes</label>
+            </div>
+            <div class="checkboxWrapper">
+                <input type="radio" class="noMeaOpt" name="custentity_measure" value="No">
+                <label for="noMeaOpt">No</label>
+            </div>
+            <div class="checkboxWrapper">
+                <input type="radio" class="usMeaOpt" name="custentity_measure" value="Not Sure Yet">
+                <label for="usMeaOpt">Not Sure Yet</label>
+            </div>
+        </div>
+    </div>
+    <div class="checkboxOptions">
+        <h4>Can we install this for you?</h4>
+        <div class="ynRadios">
+            <div class="checkboxWrapper">
+                <input type="radio" class="yesInstOpt" name="custentity_install" value="Yes">
+                <label for="yesInstOpt">Yes</label>
+            </div>
+            <div class="checkboxWrapper">
+                <input type="radio" class="noInstOpt" name="custentity_install" value="No">
+                <label for="noInstOpt">No</label>
+            </div>
+            <div class="checkboxWrapper">
+                <input type="radio" class="unsureInstOpt" name="custentity_install" value="Not Sure Yet">
+                <label for="unsureInstOpt">Not Sure Yet</label>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
